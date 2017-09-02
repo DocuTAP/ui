@@ -3,6 +3,7 @@
 $button-width: 88px;
 $button-height: 36px;
 $button-radius: 2px;
+$button-special-radius: 25px;
 
 $button-fab-size: 56px;
 $button-fab-size-mini: 40px;
@@ -59,6 +60,14 @@ $button-icon-size: 40px;
       &.md-raised {
         background-color: rgba(#000, .12);
       }
+
+      &.md-outlined {
+        &:hover {
+          background-color: $default-color;
+          border-color: $default-color;
+          color: #fff;
+        }
+      }
     }
   }
 
@@ -68,6 +77,15 @@ $button-icon-size: 40px;
 
   &.md-raised:not([disabled]) {
     box-shadow: $material-shadow-2dp;
+  }
+
+  &.md-outlined {
+    border: 1px solid currentColor;
+  }
+
+  &.md-raised,
+  &.md-outlined {
+    border-radius: $button-special-radius;
   }
 
   &.md-dense {

@@ -38,6 +38,14 @@
         color: #{'PRIMARY-COLOR'};
       }
 
+      &.md-outlined {
+        &:hover {
+          background-color: #{'PRIMARY-COLOR'};
+          border-color: #{'PRIMARY-COLOR'};
+          color: #fff;
+        }
+      }
+
       &.md-raised,
       &.md-fab {
         background-color: #{'PRIMARY-COLOR'};
@@ -58,6 +66,14 @@
         color: #{'ACCENT-COLOR'};
       }
 
+      &.md-outlined {
+        &:hover {
+          background-color: #{'ACCENT-COLOR'};
+          border-color: #{'ACCENT-COLOR'};
+          color: #fff;
+        }
+      }
+
       &.md-raised {
         background-color: #{'ACCENT-COLOR'};
         color: #{'ACCENT-CONTRAST'};
@@ -75,6 +91,14 @@
     &.md-warn {
       &:not(.md-icon-button) {
         color: #{'WARN-COLOR'};
+      }
+
+      &.md-outlined {
+        &:hover {
+          background-color: #{'WARN-COLOR'};
+          border-color: #{'WARN-COLOR'};
+          color: #fff;
+        }
       }
 
       &.md-raised,

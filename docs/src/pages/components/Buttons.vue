@@ -174,6 +174,28 @@
           </div>
         </example-box>
 
+        <example-box card-title="Outlined">
+          <div slot="demo">
+            <md-button class="md-outlined">Default</md-button>
+            <md-button class="md-outlined md-primary">Primary</md-button>
+            <md-button class="md-outlined md-accent">Accent</md-button>
+            <md-button class="md-outlined md-warn">Warn</md-button>
+            <md-button class="md-outlined md-primary" disabled>Disabled</md-button>
+            <md-button class="md-outlined md-dense">Dense</md-button>
+          </div>
+
+          <div slot="code">
+            <code-block lang="xml">
+              &lt;md-button class=&quot;md-outlined&quot;&gt;Default&lt;/md-button&gt;
+              &lt;md-button class=&quot;md-outlined md-primary&quot;&gt;Primary&lt;/md-button&gt;
+              &lt;md-button class=&quot;md-outlined md-accent&quot;&gt;Accent&lt;/md-button&gt;
+              &lt;md-button class=&quot;md-outlined md-warn&quot;&gt;Warn&lt;/md-button&gt;
+              &lt;md-button class=&quot;md-outlined md-primary&quot; disabled&gt;Disabled&lt;/md-button&gt;
+              &lt;md-button class=&quot;md-outlined md-dense&quot;&gt;Dense&lt;/md-button&gt;
+            </code-block>
+          </div>
+        </example-box>
+
         <example-box card-title="Button vs Link vs Router Link">
           <div slot="demo">
             <md-button class="md-raised md-primary">Button</md-button>
