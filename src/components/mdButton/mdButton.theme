@@ -68,8 +68,8 @@
 
       &.md-outlined {
         &:hover {
-          background-color: #{'ACCENT-COLOR'};
-          border-color: #{'ACCENT-COLOR'};
+          background-color: #{'ACCENT-COLOR-600'};
+          border-color: #{'ACCENT-COLOR-600'};
           color: #fff;
         }
       }
@@ -95,8 +95,8 @@
 
       &.md-outlined {
         &:hover {
-          background-color: #{'WARN-COLOR'};
-          border-color: #{'WARN-COLOR'};
+          background-color: #{'WARN-COLOR-600'};
+          border-color: #{'WARN-COLOR-600'};
           color: #fff;
         }
       }
