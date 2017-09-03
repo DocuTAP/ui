@@ -6,10 +6,10 @@ import { changeHtmlMetaColor, createNewStyleElement } from './dom';
 const VALID_THEME_TYPE = ['primary', 'accent', 'background', 'warn', 'hue-1', 'hue-2', 'hue-3'];
 const TYPE_REGEX = new RegExp('(' + VALID_THEME_TYPE.join('|').toUpperCase() + ')-(COLOR|CONTRAST)-?(A?\\d*)-?(\\d*\\.?\\d+)?', 'g');
 const DEFAULT_THEME_COLORS = {
-  primary: 'indigo',
-  accent: 'pink',
-  background: 'white',
-  warn: 'deep-orange'
+  primary: 'doctuapPrimary',
+  accent: 'docutapAccent',
+  background: 'docutapBackground',
+  warn: 'docutapWarn'
 };
 /*const DEFAULT_HUES = {
   accent: {

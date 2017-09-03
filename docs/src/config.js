@@ -4,10 +4,6 @@ import VueMaterial from '../../src';
 Vue.use(VueMaterial);
 
 Vue.material.registerTheme({
-  default: {
-    primary: 'blue',
-    accent: 'pink'
-  },
   blue: {
     primary: 'blue',
     accent: 'pink'
