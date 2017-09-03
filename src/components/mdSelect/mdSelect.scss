@@ -9,8 +9,11 @@ $select-height: 40px;
 }
 
 .md-select {
+  border: 1px solid $border-color;
+  border-radius: $round-radius;
   height: $select-height;
   min-width: 128px;
+  padding: 0px 20px;
   position: relative;
   width: 100%;
 
@@ -22,7 +25,7 @@ $select-height: 40px;
     content: '\25BC';
     margin-top: 2px;
     position: absolute;
-    right: 0;
+    right: 17px;
     top: 50%;
     transform: translateY(-50%) scaleY(.45) scaleX(.85);
     transition: $swift-linear;
@@ -92,6 +95,10 @@ $select-height: 40px;
 .md-select-content {
   max-height: 256px;
   width: auto;
+
+  &.md-menu-content {
+    border-radius: 5px;
+  }
 
   &.md-direction-bottom-right {
     margin-left: -16px;
