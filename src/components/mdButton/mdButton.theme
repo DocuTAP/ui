@@ -40,8 +40,8 @@
 
       &.md-outlined {
         &:hover {
-          background-color: #{'PRIMARY-COLOR'};
-          border-color: #{'PRIMARY-COLOR'};
+          background-color: #{'PRIMARY-COLOR-600'};
+          border-color: #{'PRIMARY-COLOR-600'};
           color: #fff;
         }
       }
