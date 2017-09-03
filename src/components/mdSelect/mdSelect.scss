@@ -1,38 +1,38 @@
 @import '../../core/stylesheets/variables.scss';
 
-$select-height: 32px;
+$select-height: 40px;
 
 @mixin disable-item {
   pointer-events: none;
-  user-select: none;
   user-drag: none;
+  user-select: none;
 }
 
 .md-select {
-  width: 100%;
-  min-width: 128px;
   height: $select-height;
+  min-width: 128px;
   position: relative;
+  width: 100%;
 
   &:focus {
     outline: none;
   }
 
   &:not(.md-select-icon):after {
+    content: '\25BC';
     margin-top: 2px;
     position: absolute;
-    top: 50%;
     right: 0;
-    transform: translateY(-50%) scaleY(0.45) scaleX(0.85);
+    top: 50%;
+    transform: translateY(-50%) scaleY(.45) scaleX(.85);
     transition: $swift-linear;
-    content: "\25BC";
   }
 
   &.md-active {
     .md-select-menu {
-      top: -8px;
-      pointer-events: auto;
       opacity: 1;
+      pointer-events: auto;
+      top: -8px;
       transform: translateY(-8px) scale3D(1, 1, 1);
       transform-origin: center top;
       transition: $swift-ease-out;
@@ -42,8 +42,8 @@ $select-height: 32px;
       > * {
         opacity: 1;
         transition: $swift-ease-in;
-        transition-duration: .15s;
         transition-delay: .1s;
+        transition-duration: .15s;
       }
     }
   }
@@ -53,30 +53,30 @@ $select-height: 32px;
   }
 
   select {
-    position: absolute;
     left: -999em;
+    position: absolute;
   }
 
   .md-menu {
-    width: 100%;
-    height: $select-height;
     display: block;
+    height: $select-height;
     position: relative;
+    width: 100%;
   }
 
   .md-select-value {
-    width: 100%;
-    height: $select-height;
-    padding-right: 24px;
-    display: block;
     cursor: pointer;
-    overflow: hidden;
-    position: relative;
-    z-index: 2;
+    display: block;
     font-size: 16px;
+    height: $select-height;
     line-height: $select-height + 1px;
+    overflow: hidden;
+    padding-right: 24px;
+    position: relative;
     text-overflow: ellipsis;
     white-space: nowrap;
+    width: 100%;
+    z-index: 2;
   }
 
   .md-subheader {
@@ -90,12 +90,12 @@ $select-height: 32px;
 }
 
 .md-select-content {
-  width: auto;
   max-height: 256px;
+  width: auto;
 
   &.md-direction-bottom-right {
-    margin-top: -15px;
     margin-left: -16px;
+    margin-top: -15px;
   }
 
   .md-option[disabled] {
@@ -103,8 +103,8 @@ $select-height: 32px;
   }
 
   .md-menu-item .md-list-item-holder {
-    overflow: visible;
     justify-content: flex-start;
+    overflow: visible;
   }
 
   &.md-multiple {
@@ -113,8 +113,8 @@ $select-height: 32px;
     }
 
     .md-checkbox-label {
-      padding-left: 16px;
       cursor: pointer;
+      padding-left: 16px;
     }
   }
 }
