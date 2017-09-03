@@ -28,21 +28,13 @@
         }
       }
 
-      &:after {
-        height: 2px;
-        background-color: #{'PRIMARY-COLOR'};
-      }
-
       input,
       textarea {
         color: #{'PRIMARY-COLOR'};
         text-shadow: 0 0 0 #{'BACKGROUND-CONTRAST'};
         -webkit-text-fill-color: transparent;
-      }
-
-      label,
-      .md-icon:not(.md-icon-delete) {
-        color: #{'PRIMARY-COLOR'};
+        border-color: #{'ACCENT-COLOR'};
+        box-shadow: 0 0 0.3rem #{'ACCENT-COLOR'};
       }
     }
 

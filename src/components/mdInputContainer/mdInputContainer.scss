@@ -1,53 +1,43 @@
 @import '../../core/stylesheets/variables.scss';
 
-$input-size: 32px;
+$input-size: 40px;
 
 .md-input-container {
   width: 100%;
   min-height: 48px;
   margin: 4px 0 24px;
-  padding-top: 16px;
+  padding-top: 20px;
   display: flex;
   position: relative;
 
-  &:after {
-    height: 1px;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(#000, .12);
-    transition: $swift-ease-out;
-    content: " ";
-  }
-
   label {
     position: absolute;
-    top: 23px;
-    left: 0;
-    pointer-events: none;
+    left: 11px;
     transition: $swift-ease-out;
-    transition-duration: .3s;
     color: rgba(#000, .54);
-    font-size: 16px;
+    transition-duration: .3s;
     line-height: 20px;
+    top: 0;
+    opacity: 1;
+    font-size: 12px;
   }
 
   input,
   textarea {
-    width: 100%;
-    height: $input-size;
-    padding: 0;
+    background: none;
+    border: 1px solid $border-color;
+    border-radius: $round-radius;
+    color: rgba(#000, .54);
     display: block;
     flex: 1;
-    border: none;
-    background: none;
-    transition: $swift-ease-out;
-    transition-property: font-size;
-    color: rgba(#000, .54);
     font-family: inherit;
     font-size: 1px;
+    height: $input-size;
     line-height: $input-size;
+    padding: 10px 20px;
+    transition: $swift-ease-out;
+    transition-property: font-size;
+    width: 100%;
 
     &:focus {
       outline: none;
@@ -71,11 +61,10 @@ $input-size: 32px;
   }
 
   textarea {
-    min-height: 32px;
-    max-height: 230px;
-    padding: 5px 0;
-    resize: none;
     line-height: 1.3em;
+    max-height: 230px;
+    min-height: 42px;
+    resize: none;
   }
 
   .md-error,
@@ -141,13 +130,6 @@ $input-size: 32px;
 
 .md-input-container {
   &.md-input-placeholder {
-    label {
-      pointer-events: auto;
-      top: 10px;
-      opacity: 0;
-      font-size: 12px;
-    }
-
     input,
     textarea {
       font-size: 16px;
@@ -156,34 +138,22 @@ $input-size: 32px;
 
   &.md-input-focused,
   &.md-has-value {
-    label {
-      pointer-events: auto;
-      top: 0;
-      opacity: 1;
-      font-size: 12px;
-    }
-
     input,
     textarea {
       font-size: 16px;
     }
   }
 
-  &.md-has-value {
-    input,
-    textarea {
-      color: rgba(#000, .87);
-    }
-  }
-
   &.md-input-inline {
     label {
+      font-size: 16px;
+      left: 21px;
       pointer-events: none;
+      top: 30px;
     }
 
     &.md-input-focused {
       label {
-        top: 23px;
         font-size: 16px;
       }
     }
