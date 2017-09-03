@@ -3,23 +3,23 @@
 $input-size: 40px;
 
 .md-input-container {
-  width: 100%;
-  min-height: 48px;
-  margin: 4px 0 24px;
-  padding-top: 20px;
   display: flex;
+  margin: 4px 0 24px;
+  min-height: 48px;
+  padding-top: 20px;
   position: relative;
+  width: 100%;
 
   label {
-    position: absolute;
-    left: 11px;
-    transition: $swift-ease-out;
     color: rgba(#000, .54);
-    transition-duration: .3s;
-    line-height: 20px;
-    top: 0;
-    opacity: 1;
     font-size: 12px;
+    left: 11px;
+    line-height: 20px;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    transition: $swift-ease-out;
+    transition-duration: .3s;
   }
 
   input,
@@ -44,18 +44,18 @@ $input-size: 40px;
     }
 
     &::-webkit-input-placeholder {
+      -webkit-text-fill-color: initial;
       color: rgba(#000, .54);
       font-size: 16px;
       text-shadow: none;
-      -webkit-text-fill-color: initial;
     }
 
     ~ .md-icon:not(.md-icon-delete) {
       margin-left: 12px;
 
       &:after {
-        right: 0;
         left: auto;
+        right: 0;
       }
     }
   }
@@ -69,10 +69,10 @@ $input-size: 40px;
 
   .md-error,
   .md-count {
-    height: 20px;
-    position: absolute;
     bottom: -22px;
     font-size: 12px;
+    height: 20px;
+    position: absolute;
   }
 
   .md-error {
@@ -88,18 +88,18 @@ $input-size: 40px;
   }
 
   .md-icon:not(.md-icon-delete) {
-    margin: 4px auto;
     color: rgba(#000, .54);
+    margin: 4px auto;
     transition: $swift-ease-out;
 
     &:after {
-      width: 36px;
-      height: 2px;
-      position: absolute;
-      left: 0;
       bottom: 0;
+      content: '';
+      height: 2px;
+      left: 0;
+      position: absolute;
+      width: 36px;
       z-index: 2;
-      content: "";
     }
 
     ~ {
@@ -185,11 +185,11 @@ $input-size: 40px;
     }
 
     .md-toggle-password {
+      bottom: -2px;
+      color: rgba(#000, .38);
       margin: 0;
       position: absolute;
       right: 0;
-      bottom: -2px;
-      color: rgba(#000, .38);
 
       .md-ink-ripple {
         color: rgba(#000, .87);
@@ -203,11 +203,11 @@ $input-size: 40px;
     }
 
     .md-clear-input {
+      bottom: -2px;
+      color: rgba(#000, .38);
       margin: 0;
       position: absolute;
       right: 0;
-      bottom: -2px;
-      color: rgba(#000, .38);
 
       .md-ink-ripple {
         color: rgba(#000, .87);
@@ -224,13 +224,13 @@ $input-size: 40px;
 
   &.md-input-required {
     label:after {
-      position: absolute;
-      top: 2px;
-      right: 0;
-      transform: translateX(calc(100% + 2px));
-      content: "*";
+      content: '*';
       font-size: 12px;
       line-height: 1em;
+      position: absolute;
+      right: 0;
+      top: 2px;
+      transform: translateX(calc(100% + 2px));
       vertical-align: top;
     }
   }

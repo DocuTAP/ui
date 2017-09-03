@@ -13,21 +13,12 @@ $button-dense-height: 32px;
 $button-icon-size: 40px;
 
 .md-button {
-  min-width: $button-width;
-  min-height: $button-height;
-  margin: 6px 8px;
-  padding: 0 16px;
-  display: inline-block;
-  position: relative;
-  overflow: hidden;
-  user-select: none;
-  cursor: pointer;
-  outline: none;
   background: none;
   border: 0;
   border-radius: $button-radius;
-  transition: $swift-ease-out;
   color: currentColor;
+  cursor: pointer;
+  display: inline-block;
   font-family: inherit;
   font-size: 14px;
   font-style: inherit;
@@ -35,9 +26,18 @@ $button-icon-size: 40px;
   font-weight: 500;
   letter-spacing: inherit;
   line-height: $button-height;
+  margin: 6px 8px;
+  min-height: $button-height;
+  min-width: $button-width;
+  outline: none;
+  overflow: hidden;
+  padding: 0 16px;
+  position: relative;
   text-align: center;
-  text-transform: uppercase;
   text-decoration: none;
+  text-transform: uppercase;
+  transition: $swift-ease-out;
+  user-select: none;
   vertical-align: top;
   white-space: nowrap;
 
@@ -46,7 +46,7 @@ $button-icon-size: 40px;
   }
 
   &::-moz-focus-inner {
-    border:0;
+    border: 0;
   }
 
   &:hover {
@@ -84,30 +84,30 @@ $button-icon-size: 40px;
   }
 
   &.md-dense {
-    min-height: $button-dense-height;
-    line-height: $button-dense-height;
     font-size: 13px;
+    line-height: $button-dense-height;
+    min-height: $button-dense-height;
   }
 
   &.md-icon-button,
   &.md-fab {
     .md-icon {
-      position: absolute;
-      top: 1px;
-      right: 0;
       bottom: 0;
       left: 0;
+      position: absolute;
+      right: 0;
+      top: 1px;
     }
   }
 
   &.md-icon-button {
-    width: $button-icon-size;
-    min-width: $button-icon-size;
-    height: $button-icon-size;
-    margin: 0 6px;
-    padding: 8px;
     border-radius: 50%;
+    height: $button-icon-size;
     line-height: 24px;
+    margin: 0 6px;
+    min-width: $button-icon-size;
+    padding: 8px;
+    width: $button-icon-size;
 
     &:not([disabled]) {
       &:hover {
@@ -116,22 +116,22 @@ $button-icon-size: 40px;
     }
 
     &.md-dense {
-      width: $button-dense-height;
-      min-width: $button-dense-height;
       height: $button-dense-height;
-      min-height: $button-dense-height;
-      padding: 4px;
       line-height: $button-dense-height;
+      min-height: $button-dense-height;
+      min-width: $button-dense-height;
+      padding: 4px;
+      width: $button-dense-height;
     }
 
     .md-ink-ripple {
       border-radius: 50%;
 
       .md-ripple {
-        top: 0 !important;
-        right: 0 !important;
         bottom: 0 !important;
         left: 0 !important;
+        right: 0 !important;
+        top: 0 !important;
       }
     }
 
@@ -141,19 +141,17 @@ $button-icon-size: 40px;
   }
 
   &.md-fab {
-    width: $button-fab-size;
+    background-clip: padding-box;
+    border-radius: $button-fab-size;
+    box-shadow: $material-shadow-2dp;
     height: $button-fab-size;
-    padding: 0;
+    line-height: $button-fab-size;
     min-width: 0;
     overflow: hidden;
-    box-shadow: $material-shadow-2dp;
-    border-radius: $button-fab-size;
-    line-height: $button-fab-size;
-    background-clip: padding-box;
+    padding: 0;
     transition: $swift-ease-out;
-    transition-property: background-color,
-                         box-shadow,
-                         transform;
+    transition-property: background-color, box-shadow, transform;
+    width: $button-fab-size;
 
     &:hover,
     &:focus {
@@ -161,9 +159,9 @@ $button-icon-size: 40px;
     }
 
     &.md-mini {
-      width: $button-fab-size-mini;
       height: $button-fab-size-mini;
       line-height: $button-fab-size-mini;
+      width: $button-fab-size-mini;
     }
 
     .md-ink-ripple {
@@ -191,8 +189,8 @@ $button-icon-size: 40px;
   }
 
   .md-ink-ripple {
-    border-radius: $button-radius;
     background-clip: padding-box;
+    border-radius: $button-radius;
     overflow: hidden;
   }
 }
@@ -218,19 +216,19 @@ $button-icon-size: 40px;
   }
 
   &.md-fab-top-left {
-    top: $button-fab-space;
     left: $button-fab-space;
+    top: $button-fab-space;
   }
 
   &.md-fab-top-center {
-    top: $button-fab-space;
     left: 50%;
+    top: $button-fab-space;
     transform: translateX(-50%);
   }
 
   &.md-fab-top-right {
-    top: $button-fab-space;
     right: $button-fab-space;
+    top: $button-fab-space;
   }
 
   &.md-fab-bottom-left {
@@ -245,8 +243,8 @@ $button-icon-size: 40px;
   }
 
   &.md-fab-bottom-right {
-    right: $button-fab-space;
     bottom: $button-fab-space;
+    right: $button-fab-space;
   }
 }
 
