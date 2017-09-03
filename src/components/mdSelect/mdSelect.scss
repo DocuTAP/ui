@@ -9,11 +9,8 @@ $select-height: 40px;
 }
 
 .md-select {
-  border: 1px solid $border-color;
-  border-radius: $round-radius;
   height: $select-height;
   min-width: 128px;
-  padding: 0px 20px;
   position: relative;
   width: 100%;
 
@@ -21,14 +18,20 @@ $select-height: 40px;
     outline: none;
   }
 
-  &:not(.md-select-icon):after {
-    content: '\25BC';
-    margin-top: 2px;
-    position: absolute;
-    right: 17px;
-    top: 50%;
-    transform: translateY(-50%) scaleY(.45) scaleX(.85);
-    transition: $swift-linear;
+  &:not(.md-select-icon) {
+    border: 1px solid $border-color;
+    border-radius: $round-radius;
+    padding: 0 20px;
+
+    &:after {
+      content: '\25BC';
+      margin-top: 2px;
+      position: absolute;
+      right: 17px;
+      top: 50%;
+      transform: translateY(-50%) scaleY(.45) scaleX(.85);
+      transition: $swift-linear;
+    }
   }
 
   &.md-active {
