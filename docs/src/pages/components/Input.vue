@@ -112,6 +112,12 @@
                 <md-table-cell><code>Boolean</code></md-table-cell>
                 <md-table-cell>Sets the component to read only mode.</md-table-cell>
               </md-table-row>
+
+              <md-table-row>
+                <md-table-cell>pattern</md-table-cell>
+                <md-table-cell><code>String</code></md-table-cell>
+                <md-table-cell>Custom pattern used when type is <code>tel</code> </md-table-cell>
+              </md-table-row>
             </md-table-body>
           </md-table>
         </api-table>
@@ -587,6 +593,46 @@
                 &lt;md-input-container&gt;
                   &lt;label&gt;Input&lt;/label&gt;
                   &lt;md-input maxlength=&quot;20&quot;&gt;&lt;/md-input&gt;
+                &lt;/md-input-container&gt;
+              &lt;/form&gt;
+            </code-block>
+          </div>
+        </example-box>
+
+        <example-box card-title="Phone Input">
+          <div slot="demo">
+            <md-input-container>
+              <label>Mobile</label>
+              <md-input type="tel"></md-input>
+            </md-input-container>
+
+            <md-input-container>
+              <label>Work</label>
+              <md-input type="tel" pattern="XX-XX-XX-XX-XX" value="12345551212"></md-input>
+            </md-input-container>
+
+            <md-input-container>
+              <label>Home</label>
+              <md-input type="tel" pattern="1 (XXX) XXX-XXXX" value="12345551212"></md-input>
+            </md-input-container>
+          </div>
+
+          <div slot="code">
+            <code-block lang="xml">
+              &lt;form novalidate @submit.stop.prevent=&quot;submit&quot;&gt;
+                &lt;md-input-container&gt;
+                  &lt;label&gt;Mobile&lt;/label&gt;
+                  &lt;md-input type="tel"&gt;&lt;/md-input&gt;
+                &lt;/md-input-container&gt;
+
+                &lt;md-input-container&gt;
+                  &lt;label&gt;Work&lt;/label&gt;
+                  &lt;md-input type="tel" pattern="XX-XX-XX-XX-XX" value="12345551212"&gt;&lt;/md-input&gt;
+                &lt;/md-input-container&gt;
+
+                &lt;md-input-container&gt;
+                  &lt;label&gt;Home&lt;/label&gt;
+                  &lt;md-input type="tel" pattern="1 (XXX) XXX-XXXX" value="12345551212"&gt;&lt;/md-input&gt;
                 &lt;/md-input-container&gt;
               &lt;/form&gt;
             </code-block>
