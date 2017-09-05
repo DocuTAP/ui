@@ -1,7 +1,7 @@
 <template>
   <input
     class="md-input"
-    :type="type"
+    :type="typeOutput"
     :name="name"
     :value="value"
     :disabled="disabled"
@@ -10,13 +10,17 @@
     :maxlength="maxlength"
     :readonly="readonly"
     @focus="onFocus"
-    @blur="onBlur"
+    @blur="onInputBlur"
     @input="onInputChange"
     @keydown.up="onInputChange"
     @keydown.down="onInputChange">
 </template>
 
 <script>
+  const moment = require('moment');
+
+  moment.suppressDeprecationWarnings = true;
+
   import common from './common';
   import getClosestVueParent from '../../core/utils/getClosestVueParent';
 
@@ -27,10 +31,19 @@
         type: String,
         default: 'text'
       },
-      pattern: {
+      phonePattern: {
         type: String,
         default: 'XXX-XXX-XXXX'
+      },
+      datePattern: {
+        type: String,
+        default: 'MM/DD/YYYY'
       }
+    },
+    data() {
+      return {
+        typeOutput: 'text'
+      };
     },
     mixins: [common],
     mounted() {
@@ -49,8 +62,12 @@
         this.setParentPlaceholder();
         this.handleMaxLength();
         this.updateValues();
+        this.typeOutput = this.type;
         if (this.type === 'tel') {
-          this.formatPhone();
+          this.$nextTick(() => this.formatPhone());
+        }
+        if (this.type === 'date') {
+          this.typeOutput = 'text';
         }
       });
     },
@@ -61,8 +78,57 @@
         }
         this.onInput(input);
       },
+      onInputBlur(input) {
+        if (this.type === 'date') {
+          this.formatDate();
+        }
+        this.onBlur(input);
+      },
+      formatDate() {
+        const pattern = this.datePattern.trim();
+        const value = this.$el.value.trim();
+
+        if (!value) {
+          return;
+        }
+
+        let date = moment(value);
+
+        if (!date.isValid()) {
+          date = moment(value, 'MMDDYYYY');
+        }
+
+        if (!date.isValid()) {
+          return;
+        }
+
+        const formattedValue = date.format(pattern);
+
+        if (formattedValue === value) {
+          return;
+        }
+
+        const input = this.$el;
+
+        if (!input) {
+          return;
+        }
+
+        try {
+          const caret = input.selectionStart +
+            formattedValue.length -
+            value.length;
+
+          this.$el.value = formattedValue;
+
+          input.selectionStart = caret;
+          input.selectionEnd = caret;
+        } catch (err) {
+          this.$el.value = formattedValue;
+        }
+      },
       formatPhone() {
-        const pattern = this.pattern.trim();
+        const pattern = this.phonePattern.trim();
         const value = this.$el.value.trim();
         let i = 0;
 

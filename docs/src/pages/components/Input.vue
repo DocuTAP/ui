@@ -601,20 +601,22 @@
 
         <example-box card-title="Phone Input">
           <div slot="demo">
-            <md-input-container>
-              <label>Mobile</label>
-              <md-input type="tel"></md-input>
-            </md-input-container>
+            <form novalidate @submit.stop.prevent="submit">
+              <md-input-container>
+                <label>Mobile</label>
+                <md-input type="tel"></md-input>
+              </md-input-container>
 
-            <md-input-container>
-              <label>Work</label>
-              <md-input type="tel" pattern="XX-XX-XX-XX-XX" value="12345551212"></md-input>
-            </md-input-container>
+              <md-input-container>
+                <label>Work</label>
+                <md-input type="tel" phonePattern="XX-XX-XX-XX-XX" value="12345551212"></md-input>
+              </md-input-container>
 
-            <md-input-container>
-              <label>Home</label>
-              <md-input type="tel" pattern="1 (XXX) XXX-XXXX" value="12345551212"></md-input>
-            </md-input-container>
+              <md-input-container>
+                <label>Home</label>
+                <md-input type="tel" phonePattern="1 (XXX) XXX-XXXX" value="12345551212"></md-input>
+              </md-input-container>
+            </form>
           </div>
 
           <div slot="code">
@@ -627,12 +629,44 @@
 
                 &lt;md-input-container&gt;
                   &lt;label&gt;Work&lt;/label&gt;
-                  &lt;md-input type="tel" pattern="XX-XX-XX-XX-XX" value="12345551212"&gt;&lt;/md-input&gt;
+                  &lt;md-input type="tel" phonePattern="XX-XX-XX-XX-XX" value="12345551212"&gt;&lt;/md-input&gt;
                 &lt;/md-input-container&gt;
 
                 &lt;md-input-container&gt;
                   &lt;label&gt;Home&lt;/label&gt;
-                  &lt;md-input type="tel" pattern="1 (XXX) XXX-XXXX" value="12345551212"&gt;&lt;/md-input&gt;
+                  &lt;md-input type="tel" phonePattern="1 (XXX) XXX-XXXX" value="12345551212"&gt;&lt;/md-input&gt;
+                &lt;/md-input-container&gt;
+              &lt;/form&gt;
+            </code-block>
+          </div>
+        </example-box>
+
+        <example-box card-title="Date Input">
+          <div slot="demo">
+            <form novalidate @submit.stop.prevent="submit">
+              <md-input-container>
+                <label>Date</label>
+                <md-input type="date"></md-input>
+              </md-input-container>
+
+              <md-input-container>
+                <label>Date using dashes</label>
+                <md-input datePattern="MM-DD-YYYY" type="date"></md-input>
+              </md-input-container>
+            </form>
+          </div>
+
+          <div slot="code">
+            <code-block lang="xml">
+              &lt;form novalidate @submit.stop.prevent=&quot;submit&quot;&gt;
+                &lt;md-input-container&gt;
+                  &lt;label&gt;Date&lt;/label&gt;
+                  &lt;md-input type="date"&gt;&lt;/md-input&gt;
+                &lt;/md-input-container&gt;
+
+                &lt;md-input-container&gt;
+                  &lt;label&gt;Date using dashes&lt;/label&gt;
+                  &lt;md-input datePattern="MM-DD-YYYY" type="date"&gt;&lt;/md-input&gt;
                 &lt;/md-input-container&gt;
               &lt;/form&gt;
             </code-block>
