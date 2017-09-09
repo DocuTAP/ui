@@ -1,7 +1,7 @@
 @import '../../core/stylesheets/variables.scss';
 
 $button-width: 88px;
-$button-height: 36px;
+$button-height: 40px;
 $button-radius: 2px;
 
 $button-fab-size: 56px;
@@ -72,6 +72,16 @@ $button-icon-size: 40px;
 
   &:active:not([disabled]) {
     background-color: rgba(#999, .4);
+  }
+
+  &.full-width {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  &.spaced {
+    margin-top: 20px;
   }
 
   &.md-outlined {
