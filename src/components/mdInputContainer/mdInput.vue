@@ -75,12 +75,14 @@
       onInputChange(input) {
         if (this.type === 'tel') {
           this.formatPhone();
+          this.$nextTick(() => this.onInput());
         }
         this.onInput(input);
       },
       onInputBlur(input) {
         if (this.type === 'date') {
           this.formatDate();
+          this.$nextTick(() => this.onInput());
         }
         this.onBlur(input);
       },
