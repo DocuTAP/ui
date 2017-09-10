@@ -1,3 +1,11 @@
+.md-radio-group {
+  &.md-input-invalid {
+    .md-radio-group-label {
+      color: #{'WARN-COLOR'};
+    }
+  }
+}
+
 .THEME_NAME {
   &.md-radio {
     .md-radio-container:after {

@@ -131,6 +131,42 @@
           </div>
         </example-box>
 
+        <example-box card-title="Grouped">
+          <div slot="demo">
+            <div class="md-radio-group">
+              <div class="md-radio-group-label">Group 1</div>
+              <md-radio v-model="radio1" id="my-test1" name="my-test-group1" md-value="1">My beautiful radio</md-radio>
+              <md-radio v-model="radio1" id="my-test2" name="my-test-group1" md-value="2">Another radio</md-radio>
+              <md-radio v-model="radio1" id="my-test3" name="my-test-group1" md-value="3">Another another radio</md-radio>
+            </div>
+
+            <div class="md-radio-group md-input-invalid">
+              <div class="md-radio-group-label">Invalid Group 2</div>
+              <md-radio v-model="radio2" id="my-test4" name="my-test-group2" md-value="1" class="md-primary">Primary radio</md-radio>
+              <md-radio v-model="radio2" id="my-test5" name="my-test-group2" md-value="2" class="md-primary">Another primary radio</md-radio>
+              <md-radio v-model="radio2" id="my-test6" name="my-test-group2" md-value="3" class="md-primary">Another another primary radio</md-radio>
+            </div>
+          </div>
+
+          <div slot="code">
+            <code-block lang="xml">
+              &lt;div class="md-radio-group"&gt;
+                &lt;div class="md-radio-group-label"&gt;Group 1&lt;/div&gt;
+                &lt;md-radio v-model=&quot;radio1&quot; id=&quot;my-test1&quot; name=&quot;my-test-group1&quot; md-value=&quot;1&quot;&gt;My beautiful radio&lt;/md-radio&gt;
+                &lt;md-radio v-model=&quot;radio1&quot; id=&quot;my-test2&quot; name=&quot;my-test-group1&quot; md-value=&quot;2&quot;&gt;Another radio&lt;/md-radio&gt;
+                &lt;md-radio v-model=&quot;radio1&quot; id=&quot;my-test3&quot; name=&quot;my-test-group1&quot; md-value=&quot;3&quot;&gt;Another another radio&lt;/md-radio&gt;
+              &lt;/div&gt;
+
+              &lt;div class="md-radio-group md-input-invalid"&gt;
+                &lt;div class="md-radio-group-label"&gt;Invalid Group 2&lt;/div&gt;
+                &lt;md-radio v-model=&quot;radio2&quot; id=&quot;my-test4&quot; name=&quot;my-test-group2&quot; md-value=&quot;1&quot; class=&quot;md-primary&quot;&gt;Primary radio&lt;/md-radio&gt;
+                &lt;md-radio v-model=&quot;radio2&quot; id=&quot;my-test5&quot; name=&quot;my-test-group2&quot; md-value=&quot;2&quot; class=&quot;md-primary&quot;&gt;Another primary radio&lt;/md-radio&gt;
+                &lt;md-radio v-model=&quot;radio2&quot; id=&quot;my-test6&quot; name=&quot;my-test-group2&quot; md-value=&quot;3&quot; class=&quot;md-primary&quot;&gt;Another another primary radio&lt;/md-radio&gt;
+              &lt;/div&gt;
+            </code-block>
+          </div>
+        </example-box>
+
         <example-box card-title="Themes">
           <div slot="demo">
             <md-theme md-name="orange">

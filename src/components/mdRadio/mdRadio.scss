@@ -3,6 +3,22 @@
 $radio-size: 20px;
 $radio-touch-size: 48px;
 
+.md-radio-group {
+  margin-bottom: 12px;
+  margin-top: 4px;
+  padding-left: 11px;
+  padding-top: $radio-size;
+  position: relative;
+  text-align: left;
+
+  .md-radio-group-label {
+    color: rgba(0, 0, 0, .54);
+    font-size: 12px;
+    position: absolute;
+    top: 0;
+  }
+}
+
 .md-radio {
   width: auto;
   margin: 16px 8px 16px 0;
