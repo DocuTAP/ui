@@ -3,6 +3,22 @@
 $checkbox-size: 20px;
 $checkbox-touch-size: 48px;
 
+.md-checkboxes-group {
+  margin-bottom: 12px;
+  margin-top: 4px;
+  padding-left: 11px;
+  padding-top: $checkbox-size;
+  position: relative;
+  text-align: left;
+
+  .md-checkboxes-group-label {
+    color: rgba(0, 0, 0, .54);
+    font-size: 12px;
+    position: absolute;
+    top: 0;
+  }
+}
+
 .md-checkbox {
   width: auto;
   margin: 16px 8px 16px 0;

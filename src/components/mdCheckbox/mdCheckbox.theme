@@ -1,3 +1,11 @@
+.md-checkboxes-group {
+  &.md-input-invalid {
+    .md-checkboxes-group-label {
+      color: #{'WARN-COLOR'};
+    }
+  }
+}
+
 .THEME_NAME {
   &.md-checkbox {
     &.md-checked {

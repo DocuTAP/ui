@@ -87,6 +87,42 @@
           </div>
         </example-box>
 
+        <example-box card-title="Checkboxes Group">
+          <div slot="demo">
+            <div class="md-checkboxes-group">
+              <div class="md-checkboxes-group-label">Checkboxes group</div>
+              <md-checkbox v-model="checkbox">Checkbox 1</md-checkbox>
+              <md-checkbox v-model="checkbox">Checkbox 2</md-checkbox>
+              <md-checkbox v-model="checkbox">Checkbox 3</md-checkbox>
+            </div>
+
+            <div class="md-checkboxes-group md-input-invalid">
+              <div class="md-checkboxes-group-label">Invalid label</div>
+              <md-checkbox v-model="checkbox">Checkbox 1</md-checkbox>
+              <md-checkbox v-model="checkbox">Checkbox 2</md-checkbox>
+              <md-checkbox v-model="checkbox">Checkbox 3</md-checkbox>
+            </div>
+          </div>
+
+          <div slot="code">
+            <code-block lang="xml">
+              &lt;div class="md-checkboxes-group"&gt;
+                &lt;div class="md-checkboxes-group-label"&gt;Checkboxes group&lt;/div&gt;
+                &lt;md-checkbox v-model=&quot;checkbox&quot;&gt;Checkbox 1&lt;/md-checkbox&gt;
+                &lt;md-checkbox v-model=&quot;checkbox&quot;&gt;Checkbox 2&lt;/md-checkbox&gt;
+                &lt;md-checkbox v-model=&quot;checkbox&quot;&gt;Checkbox 3&lt;/md-checkbox&gt;
+              &lt;/div&gt;
+
+              &lt;div class="md-checkboxes-group md-input-invalid"&gt;
+                &lt;div class="md-checkboxes-group-label"&gt;Checkboxes group&lt;/div&gt;
+                &lt;md-checkbox v-model=&quot;checkbox&quot;&gt;Checkbox 1&lt;/md-checkbox&gt;
+                &lt;md-checkbox v-model=&quot;checkbox&quot;&gt;Checkbox 2&lt;/md-checkbox&gt;
+                &lt;md-checkbox v-model=&quot;checkbox&quot;&gt;Checkbox 3&lt;/md-checkbox&gt;
+              &lt;/div&gt;
+            </code-block>
+          </div>
+        </example-box>
+
         <example-box card-title="Themes">
           <div slot="demo">
             <md-checkbox md-theme="orange"  id="my-test5" name="my-test5" v-model="checkbox2" class="md-primary">Primary Orange</md-checkbox>
