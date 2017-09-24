@@ -8,7 +8,7 @@
   "registry": "github",
   "repository": {
     "type": "git",
-    "url": "https://bitbucket.org/docutap/inputs.git"
+    "url": "https://bitbucket.org/docutap/ui.git"
   },
   "keywords": [
     "browser",
