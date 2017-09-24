@@ -1,5 +1,5 @@
 {
-  "name": "vue-material",
+  "name": "@docutap/ui",
   "description": "Material Design for Vue.js",
   "version": "0.7.4",
   "author": "Marcos Moura <marcosvmmoura@gmail.com>",
@@ -8,10 +8,7 @@
   "registry": "github",
   "repository": {
     "type": "git",
-    "url": "https://github.com/marcosmoura/vue-material.git"
-  },
-  "bugs": {
-    "url": "https://github.com/marcosmoura/vue-material/issues"
+    "url": "https://bitbucket.org/docutap/inputs.git"
   },
   "keywords": [
     "browser",
