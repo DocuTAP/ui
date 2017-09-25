@@ -20,8 +20,8 @@
           <h3 class="md-title">NPM</h3>
           <p>Install Vue Material through npm or yarn <br><small>* Others package managers like JSPM and Bower are not supported yet.</small></p>
           <code-block lang="bash">
-            $ npm install --save git+ssh://git@bitbucket.org/docutap/ui.git#1fe052f
-            $ yarn add git+ssh://git@bitbucket.org/docutap/ui.git#1fe052f
+            $ npm install --save git+ssh://git@bitbucket.org/docutap/ui.git#25c74bc
+            $ yarn add git+ssh://git@bitbucket.org/docutap/ui.git#25c74bc
           </code-block>
         </section>
       </article>

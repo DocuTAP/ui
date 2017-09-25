@@ -14,7 +14,7 @@ Import Roboto and Material Icons from Google CDN:
 ## Install
 
 ```bash
-npm install --save git+ssh://git@bitbucket.org/docutap/ui.git#1fe052f
+npm install --save git+ssh://git@bitbucket.org/docutap/ui.git#25c74bc
 ```
 
 When updating the commit-ish from Bitbucket make sure to source from the [`dist` branch](https://bitbucket.org/docutap/ui/branch/dist).
