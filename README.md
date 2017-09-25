@@ -1,4 +1,6 @@
-# DocuTAP Vue UI
+# DocuTAP UI
+
+A DocuTAP UI library built for [Vue.js](https://vuejs.org/) forked from [Vue Material](https://github.com/vuematerial/vue-material)
 
 ## Installation
 
@@ -9,24 +11,20 @@ Import Roboto and Material Icons from Google CDN:
 <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
 ```
 
-## Private npm install
+## Install
 
-To install from Bitbucket add this to your package.json:
+```bash
+npm install --save git+ssh://git@bitbucket.org/docutap/ui.git#1fe052f
+```
 
-`"vue-material": "git+https://dt-acarriger@bitbucket.org/dt-acarriger/vue-material.git#967e1efy"`
+When updating the commit-ish from Bitbucket make sure to source from the [`dist` branch](https://bitbucket.org/docutap/ui/branch/dist).
 
 Import or require Vue and Vue Material in your code:
 
 ``` javascript
 import Vue from 'vue'
-import VueMaterial from 'vue-material'
-import 'vue-material/dist/vue-material.css'
-
-// OR
-
-var Vue = require('vue')
-var VueMaterial = require('vue-material')
-require('vue-material/dist/vue-material.css')
+import DocutapUi from '@docutap/ui'
+import '@docutap/ui/dist/ui.css'
 ```
 
 ## Usage
@@ -34,13 +32,13 @@ require('vue-material/dist/vue-material.css')
 Enable Vue Material in your application using ```Vue.use()```. You can always enable individual components:
 
 ``` javascript
-Vue.use(VueMaterial)
+Vue.use(DocutapUi)
 
 // OR
 
-Vue.use(VueMaterial.MdCore) //Required to boot vue material
-Vue.use(VueMaterial.MdButton)
-Vue.use(VueMaterial.MdIcon)
-Vue.use(VueMaterial.MdSidenav)
-Vue.use(VueMaterial.MdToolbar)
+Vue.use(DocutapUI.MdCore) //Required to boot DocutapUi
+Vue.use(DocutapUI.MdButton)
+Vue.use(DocutapUI.MdIcon)
+Vue.use(DocutapUI.MdSidenav)
+Vue.use(DocutapUI.MdToolbar)
 ```

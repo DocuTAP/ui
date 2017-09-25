@@ -21,7 +21,7 @@
     "angular-material",
     "components"
   ],
-  "main": "dist/vue-material.js",
+  "main": "dist/ui.js",
   "files": [
     "dist",
     "src",

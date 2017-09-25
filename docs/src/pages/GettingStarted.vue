@@ -20,22 +20,9 @@
           <h3 class="md-title">NPM</h3>
           <p>Install Vue Material through npm or yarn <br><small>* Others package managers like JSPM and Bower are not supported yet.</small></p>
           <code-block lang="bash">
-            $ npm install vue-material --save
-            $ yarn add vue-material
+            $ npm install --save git+ssh://git@bitbucket.org/docutap/ui.git#1fe052f
+            $ yarn add git+ssh://git@bitbucket.org/docutap/ui.git#1fe052f
           </code-block>
-        </section>
-
-        <section>
-          <h3 class="md-title">Standalone</h3>
-          <p>Download from Github and reference the script and the stylesheet in your HTML:</p>
-          <md-button class="md-raised md-primary" href="https://github.com/marcosmoura/vue-material/archive/master.zip" target="_blank" rel="noopener">download</md-button>
-        </section>
-
-        <section>
-          <h3 class="md-title">CDN</h3>
-          <p>Include the Vue Material files from unpkg:</p>
-          <md-button class="md-raised md-primary" href="https://unpkg.com/vue-material" target="_blank" rel="noopener">Javascript</md-button>
-          <md-button class="md-raised md-primary" href="https://unpkg.com/vue-material/dist/vue-material.css" target="_blank" rel="noopener">CSS</md-button>
         </section>
       </article>
 
@@ -47,51 +34,37 @@
 
           <p>Import and use the whole library:</p>
           <code-block lang="xml">
-            &lt;link rel=&quot;stylesheet&quot; href=&quot;path/to/vue-material.css&quot;&gt;
+            &lt;link rel=&quot;stylesheet&quot; href=&quot;path/to/ui.css&quot;&gt;
           </code-block>
 
           <code-block lang="javascript">
             var Vue = require('vue')
-            var VueMaterial = require('vue-material')
+            var DocutapUi = require('@docutap/ui')
 
-            Vue.use(VueMaterial)
+            Vue.use(DocutapUi)
           </code-block>
 
           <p>Or to import individual components:</p>
           <code-block lang="xml">
-            &lt;link rel=&quot;stylesheet&quot; href=&quot;path/to/vue-material/dist/components/mdCore.css&quot;&gt;
-            &lt;link rel=&quot;stylesheet&quot; href=&quot;path/to/vue-material/dist/components/mdButton.css&quot;&gt;
-            &lt;link rel=&quot;stylesheet&quot; href=&quot;path/to/vue-material/dist/components/mdIcon.css&quot;&gt;
-            &lt;link rel=&quot;stylesheet&quot; href=&quot;path/to/vue-material/dist/components/mdSidenav.css&quot;&gt;
-            &lt;link rel=&quot;stylesheet&quot; href=&quot;path/to/vue-material/dist/components/mdToolbar.css&quot;&gt;
+            &lt;link rel=&quot;stylesheet&quot; href=&quot;path/to/@docutap/ui/dist/components/mdCore.css&quot;&gt;
+            &lt;link rel=&quot;stylesheet&quot; href=&quot;path/to/@docutap/ui/dist/components/mdButton.css&quot;&gt;
+            &lt;link rel=&quot;stylesheet&quot; href=&quot;path/to/@docutap/ui/dist/components/mdIcon.css&quot;&gt;
+            &lt;link rel=&quot;stylesheet&quot; href=&quot;path/to/@docutap/ui/dist/components/mdSidenav.css&quot;&gt;
+            &lt;link rel=&quot;stylesheet&quot; href=&quot;path/to/@docutap/ui/dist/components/mdToolbar.css&quot;&gt;
           </code-block>
 
           <code-block lang="javascript">
             var Vue = require('vue')
-            var VueMaterial = require('vue-material')
+            var DocutapUi = require('@docutap/ui')
 
-            Vue.use(VueMaterial.mdCore) //Required to boot vue material
-            Vue.use(VueMaterial.mdButton)
-            Vue.use(VueMaterial.mdIcon)
-            Vue.use(VueMaterial.mdSidenav)
-            Vue.use(VueMaterial.mdToolbar)
+            Vue.use(DocutapUi.mdCore) //Required to boot vue material
+            Vue.use(DocutapUi.mdButton)
+            Vue.use(DocutapUi.mdIcon)
+            Vue.use(DocutapUi.mdSidenav)
+            Vue.use(DocutapUi.mdToolbar)
           </code-block>
 
           <p><strong>Note:</strong> If you are using Webpack you can still import the css files inside your modules. And you can also write everything using ES6 with Babel or Bublé.</p>
-        </section>
-
-        <section>
-          <h3 class="md-title">Standalone</h3>
-
-          <code-block lang="xml">
-            &lt;link rel=&quot;stylesheet&quot; href=&quot;path/to/vue-material.css&quot;&gt;
-            &lt;script src=&quot;path/to/vue-material.js&quot;&gt;&lt;/script&gt;
-          </code-block>
-
-          <code-block lang="javascript">
-            // The VueMaterial variable is global
-            Vue.use(VueMaterial)
-          </code-block>
         </section>
       </article>
 

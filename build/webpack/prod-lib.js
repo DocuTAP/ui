@@ -22,7 +22,7 @@ const componentsPath = 'src/components';
 const components = getDirectories(path.resolve(__dirname, '../../', componentsPath));
 
 baseConfig.entry = {
-  'vue-material': ['./src/index.js'],
+  ui: ['./src/index.js'],
   'components/mdCore/index': ['./src/core']
 };
 
@@ -34,7 +34,7 @@ export default merge(baseConfig, {
   output: {
     path: config.rootPath,
     filename: '[name].js',
-    library: 'VueMaterial',
+    library: 'DocutapUi',
     libraryTarget: 'umd'
   },
   module: {

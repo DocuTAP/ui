@@ -4,7 +4,7 @@
       <md-toolbar class="vue-material-logo" md-theme="white">
         <router-link exact to="/">
           <img :src="logo" alt="Vue">
-          <span>DocuTAP Vue UI</span>
+          <span>DocuTAP UI</span>
         </router-link>
       </md-toolbar>
 

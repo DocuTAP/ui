@@ -9,7 +9,7 @@
 
       <release-version></release-version>
 
-      <md-button href="https://github.com/marcosmoura/vue-material" target="_blank" rel="noopener" class="md-icon-button github">
+      <md-button href="https://bitbucket.org/docutap/ui" target="_blank" rel="noopener" class="md-icon-button github">
         <md-icon md-src="assets/icon-github.svg"></md-icon>
       </md-button>
     </md-whiteframe>
