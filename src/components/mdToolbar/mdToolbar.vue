@@ -1,6 +1,9 @@
 <template>
   <div class="md-toolbar" :class="[themeClass]">
-    <slot></slot>
+    <div class="placeholder"></div>
+    <div class="content">
+      <slot></slot>
+    </div>
   </div>
 </template>
 

@@ -418,7 +418,7 @@
         <example-box card-title="Complete example">
           <div slot="demo">
             <div class="phone-viewport complete-example">
-              <md-whiteframe md-tag="md-toolbar" md-elevation="2" md-theme="light-blue" class="md-large">
+              <md-whiteframe md-tag="md-toolbar" md-elevation="2" md-theme="light-blue" class="md-large md-fixed">
                 <div class="md-toolbar-container">
                   <md-button class="md-icon-button" @click="$refs.sidenav.toggle()">
                     <md-icon>menu</md-icon>

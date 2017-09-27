@@ -1,7 +1,9 @@
 .THEME_NAME {
   @mixin toolbar-spec($main-color, $second-color, $third-color) {
-    background-color: $main-color;
-    color: $second-color;
+    .content {
+      background-color: $main-color;
+      color: $second-color;
+    }
 
     .md-input-container {
       &.md-input-focused {
