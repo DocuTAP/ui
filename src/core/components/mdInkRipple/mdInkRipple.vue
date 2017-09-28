@@ -109,9 +109,12 @@
             left = event.changedTouches[0].pageX;
           }
 
+          const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+          const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+
           return {
-            top: top - rect.top - this.$refs.ripple.offsetHeight / 2 - document.body.scrollTop + 'px',
-            left: left - rect.left - this.$refs.ripple.offsetWidth / 2 - document.body.scrollLeft + 'px'
+            top: top - rect.top - this.$refs.ripple.offsetHeight / 2 - scrollTop + 'px',
+            left: left - rect.left - this.$refs.ripple.offsetWidth / 2 - scrollLeft + 'px'
           };
         }
 
