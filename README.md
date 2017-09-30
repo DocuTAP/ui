@@ -19,7 +19,7 @@ npm install --save git+ssh://git@bitbucket.org/docutap/ui.git#25c74bc
 
 When updating the commit-ish from Bitbucket make sure to source from the [`dist` branch](https://bitbucket.org/docutap/ui/branch/dist).
 
-Import or require Vue and Vue Material in your code:
+Import Vue and DocuTAP UI in your code:
 
 ``` javascript
 import Vue from 'vue'
@@ -29,14 +29,14 @@ import '@docutap/ui/dist/ui.css'
 
 ## Usage
 
-Enable Vue Material in your application using ```Vue.use()```. You can always enable individual components:
+Enable DocuTAP UI in your application using ```Vue.use()```. You can always enable individual components:
 
 ``` javascript
 Vue.use(DocutapUi)
 
 // OR
 
-Vue.use(DocutapUI.MdCore) //Required to boot DocutapUi
+Vue.use(DocutapUI.MdCore) // Required to boot DocuTAP UI
 Vue.use(DocutapUI.MdButton)
 Vue.use(DocutapUI.MdIcon)
 Vue.use(DocutapUI.MdSidenav)
