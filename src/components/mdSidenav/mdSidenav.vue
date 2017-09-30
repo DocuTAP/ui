@@ -8,8 +8,6 @@
   </div>
 </template>
 
-<style lang="scss" src="./mdSidenav.scss"></style>
-
 <script>
   import theme from '../../core/components/mdTheme/mixin';
 
@@ -43,7 +41,6 @@
       },
       open() {
         this.mdVisible = true;
-        this.$el.focus();
         this.$emit('open');
       },
       close() {
@@ -134,3 +131,5 @@
     }
   };
 </script>
+
+<style lang="scss" src="./mdSidenav.scss"></style>
