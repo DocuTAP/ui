@@ -26,11 +26,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   color: rgba(#000, .87);
-  font-family: $font-roboto;
+  font-family: $default-font;
   @extend .md-body-1;
 }
 
-
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
 
 /*  Fluid Media
    ========================================================================== */

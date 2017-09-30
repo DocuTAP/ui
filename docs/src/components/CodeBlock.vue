@@ -45,7 +45,7 @@
       right: 30px;
       transition: $swift-ease-out;
       color: rgba(#000, .26);
-      font-family: $font-roboto;
+      font-family: $default-font;
       font-size: 11px;
       line-height: 1em;
     }
@@ -107,7 +107,7 @@
     transform: translate3d(0, -48px, 0);
     transition: $swift-ease-in-out;
     color: #fff;
-    font-family: $font-roboto;
+    font-family: $default-font;
     font-size: 14px;
     line-height: 1em;
 
