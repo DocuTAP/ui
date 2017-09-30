@@ -11,6 +11,11 @@ $card-radius: 2px;
   z-index: 1;
   border-radius: $card-radius;
   box-shadow: $material-shadow-2dp;
+  margin: 10%;
+
+  @media (max-width: $breakpoint-xsmall) {
+    margin: 6% 2%;
+  }
 
   &.md-with-hover {
     cursor: pointer;

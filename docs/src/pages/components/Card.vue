@@ -1100,10 +1100,11 @@
 
 <style lang="scss" scoped>
   .card-holder {
+    overflow: auto;
+
     .md-card {
       width: 100%;
-      max-width: 320px;
-      margin: 0 4px 16px;
+      max-width: 400px;
       display: inline-block;
       vertical-align: top;
     }
