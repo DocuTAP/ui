@@ -2,6 +2,10 @@
 
 A DocuTAP UI library built for [Vue.js](https://vuejs.org/) forked from [Vue Material](https://github.com/vuematerial/vue-material)
 
+## Features
+
+* Can be consumed via [DocuTAP Form](https://bitbucket.org/docutap/form) and [DocuTAP Inputs](https://bitbucket.org/docutap/inputs) to avoid common boilerplate
+
 ## Installation
 
 Import Roboto and Material Icons from Google CDN:
@@ -14,7 +18,7 @@ Import Roboto and Material Icons from Google CDN:
 ## Install
 
 ```bash
-npm install --save git+ssh://git@bitbucket.org/docutap/ui.git#25c74bc
+npm install --save git+ssh://git@bitbucket.org/docutap/ui.git#4ef21b4
 ```
 
 When updating the commit-ish from Bitbucket make sure to source from the [`dist` branch](https://bitbucket.org/docutap/ui/branch/dist).
