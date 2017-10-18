@@ -4,6 +4,7 @@ $input-size: 40px;
 
 .md-input-container {
   display: flex;
+  flex-wrap: wrap;
   margin: 4px 0 24px;
   min-height: 48px;
   padding-top: 20px;
@@ -65,6 +66,10 @@ $input-size: 40px;
     max-height: 230px;
     min-height: 42px;
     resize: none;
+  }
+
+  .md-button {
+    flex-basis: 100%;
   }
 
   .md-error,
@@ -176,6 +181,10 @@ $input-size: 40px;
     input,
     textarea {
       color: rgba(#000, .38);
+    }
+
+    input {
+      background-color: $doctuap-disabled;
     }
   }
 

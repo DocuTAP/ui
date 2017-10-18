@@ -40,6 +40,12 @@
                 <md-table-cell><code>String</code></md-table-cell>
                 <md-table-cell>Create a anchor on the button - In this case the generated tag will be <code>&lt;a&gt;</code>.</md-table-cell>
               </md-table-row>
+
+              <md-table-row>
+                <md-table-cell>faux-link</md-table-cell>
+                <md-table-cell><code>Boolean</code></md-table-cell>
+                <md-table-cell>Makes button look like a link.</md-table-cell>
+              </md-table-row>
             </md-table-body>
           </md-table>
 

@@ -170,7 +170,7 @@
 
               <md-input-container>
                 <label for="font">Font</label>
-                <md-select name="font" id="font" v-model="font">
+                <md-select name="font" id="font" :disabled="isDisabled" v-model="font">
                   <md-option value="arial">Arial</md-option>
                   <md-option value="calibri">Calibri</md-option>
                   <md-option value="cambria">Cambria</md-option>
@@ -185,9 +185,11 @@
                   <md-option value="segoe_ui">Segoe UI</md-option>
                   <md-option value="times_new_roman">Times New Roman</md-option>
                   <md-option value="ubuntu">Ubuntu</md-option>
-                  <md-option value="verdana" :disabled="isDisabled">Verdana</md-option>
+                  <md-option value="verdana" :disabled="true">Verdana</md-option>
                 </md-select>
               </md-input-container>
+
+              <md-button @click="isDisabled = !isDisabled">Toggle disabled</md-button>
 
               <md-input-container>
                 <label for="food">Food</label>
@@ -287,13 +289,9 @@
                 data: () => ({
                   movie: 'godfather',
                   country: '',
-                  font: ''
+                  font: '',
+                  isDisabled: false
                 }),
-                computed: {
-                  isDisabled() {
-                    return true;
-                  }
-                },
                 methods: {
                   setPulpFiction() {
                     this.movie = 'pulp_fiction';
@@ -494,6 +492,8 @@
 <style lang="scss" scoped>
   .field-group {
     display: flex;
+    flex-basis: 100%;
+    flex-wrap: wrap;
   }
 
   .md-input-container {
@@ -532,13 +532,9 @@
       usersIcon: [],
       iconMenuOptions: {
         mdAlignTrigger: true
-      }
+      },
+      isDisabled: true
     }),
-    computed: {
-      isDisabled() {
-        return true;
-      }
-    },
     methods: {
       setPulpFiction() {
         this.movie = 'pulp_fiction';

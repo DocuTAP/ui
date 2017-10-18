@@ -35,7 +35,6 @@ $button-icon-size: 40px;
   position: relative;
   text-align: center;
   text-decoration: none;
-  text-transform: uppercase;
   transition: $swift-ease-out;
   user-select: none;
   vertical-align: top;
@@ -45,12 +44,16 @@ $button-icon-size: 40px;
     outline: none;
   }
 
+  &:not([faux-link]) {
+    text-transform: uppercase;
+  }
+
   &::-moz-focus-inner {
     border: 0;
   }
 
   &:hover {
-    &:not([disabled]) {
+    &:not([disabled]):not([faux-link]) {
       &:not(.md-raised) {
         background-color: rgba(#999, .2);
         text-decoration: none;
@@ -70,7 +73,7 @@ $button-icon-size: 40px;
     }
   }
 
-  &:active:not([disabled]) {
+  &:active:not([disabled]):not([faux-link]) {
     background-color: rgba(#999, .4);
   }
 
