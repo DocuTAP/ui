@@ -160,7 +160,7 @@
 
         <example-box card-title="Raised">
           <div slot="demo">
-            <md-button class="md-raised">Default</md-button>
+            <md-button class="md-raised md-default">Default</md-button>
             <md-button class="md-raised md-primary">Primary</md-button>
             <md-button class="md-raised md-accent">Accent</md-button>
             <md-button class="md-raised md-warn">Warn</md-button>
@@ -182,22 +182,44 @@
 
         <example-box card-title="Outlined">
           <div slot="demo">
-            <md-button class="md-outlined">Default</md-button>
+            <md-button class="md-outlined md-default">Default</md-button>
             <md-button class="md-outlined md-primary">Primary</md-button>
             <md-button class="md-outlined md-accent">Accent</md-button>
             <md-button class="md-outlined md-warn">Warn</md-button>
             <md-button class="md-outlined md-primary" disabled>Disabled</md-button>
-            <md-button class="md-outlined md-dense">Dense</md-button>
+            <md-button class="md-outlined md-dense md-default">Dense</md-button>
           </div>
 
           <div slot="code">
             <code-block lang="xml">
-              &lt;md-button class=&quot;md-outlined&quot;&gt;Default&lt;/md-button&gt;
+              &lt;md-button class=&quot;md-outlined md-default&quot;&gt;Default&lt;/md-button&gt;
               &lt;md-button class=&quot;md-outlined md-primary&quot;&gt;Primary&lt;/md-button&gt;
               &lt;md-button class=&quot;md-outlined md-accent&quot;&gt;Accent&lt;/md-button&gt;
               &lt;md-button class=&quot;md-outlined md-warn&quot;&gt;Warn&lt;/md-button&gt;
               &lt;md-button class=&quot;md-outlined md-primary&quot; disabled&gt;Disabled&lt;/md-button&gt;
-              &lt;md-button class=&quot;md-outlined md-dense&quot;&gt;Dense&lt;/md-button&gt;
+              &lt;md-button class=&quot;md-outlined md-dense md-default&quot;&gt;Dense&lt;/md-button&gt;
+            </code-block>
+          </div>
+        </example-box>
+
+        <example-box card-title="Faux Link">
+          <div slot="demo">
+            <md-button faux-link class="md-default">Default</md-button>
+            <md-button faux-link class="md-primary">Primary</md-button>
+            <md-button faux-link class="md-accent">Accent</md-button>
+            <md-button faux-link class="md-warn">Warn</md-button>
+            <md-button faux-link class="md-primary" disabled>Disabled</md-button>
+            <md-button faux-link class="md-dense md-default">Dense</md-button>
+          </div>
+
+          <div slot="code">
+            <code-block lang="xml">
+              &lt;md-button faux-link class=&quot;md-default&quot;&gt;Default&lt;/md-button&gt;
+              &lt;md-button faux-link class=&quot;md-primary&quot;&gt;Primary&lt;/md-button&gt;
+              &lt;md-button faux-link class=&quot;md-accent&quot;&gt;Accent&lt;/md-button&gt;
+              &lt;md-button faux-link class=&quot;md-warn&quot;&gt;Warn&lt;/md-button&gt;
+              &lt;md-button faux-link class=&quot;md-primary&quot; disabled&gt;Disabled&lt;/md-button&gt;
+              &lt;md-button faux-link class=&quot;md-dense md-default&quot;&gt;Dense&lt;/md-button&gt;
             </code-block>
           </div>
         </example-box>

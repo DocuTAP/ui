@@ -55,7 +55,6 @@ $button-icon-size: 40px;
   &:hover {
     &:not([disabled]):not([faux-link]) {
       &:not(.md-raised) {
-        background-color: rgba(#999, .2);
         text-decoration: none;
       }
 
@@ -65,9 +64,12 @@ $button-icon-size: 40px;
 
       &.md-outlined {
         &:hover {
-          background-color: $default-color;
-          border-color: $default-color;
           color: #fff;
+
+          &.md-default {
+            background-color: $default-color;
+            border-color: $default-color;
+          }
         }
       }
     }
