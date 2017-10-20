@@ -17,6 +17,11 @@ $checkbox-touch-size: 48px;
     position: absolute;
     top: 0;
   }
+
+  .md-button {
+    display: block;
+    margin: auto;
+  }
 }
 
 .md-checkbox {
@@ -84,7 +89,6 @@ $checkbox-touch-size: 48px;
       bottom: -16px;
       left: -16px;
       border-radius: 50%;
-      color: rgba(#000, .54);
 
       .md-ripple {
         width: $checkbox-touch-size !important;

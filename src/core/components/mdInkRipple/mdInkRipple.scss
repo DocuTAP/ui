@@ -10,6 +10,10 @@
   left: 0;
   -webkit-mask-image: radial-gradient(circle, white 100%, black 100%);
   transition: $swift-ease-in;
+
+  &.hide {
+    display: none;
+  }
 }
 
 .md-ripple {

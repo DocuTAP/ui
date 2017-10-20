@@ -1,5 +1,5 @@
 <template>
-  <div class="md-ink-ripple" v-if="mounted || !disabled">
+  <div :class="{'hide': mdDisabled}" class="md-ink-ripple" v-if="mounted">
     <div class="md-ripple" :class="classes" :style="styles" ref="ripple"></div>
   </div>
 </template>
@@ -62,7 +62,8 @@
         };
       },
       disabled() {
-        return this.mdDisabled || !this.$material.inkRipple;
+        // return this.mdDisabled || !this.$material.inkRipple;
+        return false;
       }
     },
     watch: {

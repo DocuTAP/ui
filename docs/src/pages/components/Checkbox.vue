@@ -71,10 +71,12 @@
       <div slot="example">
         <example-box card-title="Default">
           <div slot="demo">
-            <md-checkbox id="my-test1" name="my-test1" v-model="checkbox">Regular Checkbox</md-checkbox>
+            <md-checkbox :disabled="isDisabled" id="my-test1" name="my-test1" v-model="checkbox">Regular Checkbox</md-checkbox>
             <md-checkbox id="my-test2" name="my-test2" v-model="checkbox" class="md-primary">Primary Color</md-checkbox>
             <md-checkbox id="my-test3" name="my-test3" v-model="checkbox" class="md-warn">Warn Color</md-checkbox>
             <md-checkbox id="my-test4" name="my-test4" v-model="checkbox" disabled>Disabled</md-checkbox>
+
+            <md-button @click="isDisabled = !isDisabled">Toggle Disabled</md-button>
           </div>
 
           <div slot="code">
@@ -152,7 +154,8 @@
     data() {
       return {
         checkbox: true,
-        checkbox2: false
+        checkbox2: false,
+        isDisabled: false
       };
     }
   };
