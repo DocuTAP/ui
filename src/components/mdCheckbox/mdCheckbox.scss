@@ -106,6 +106,22 @@ $checkbox-touch-size: 48px;
     padding-left: 8px;
     line-height: $checkbox-size;
   }
+
+  &.md-disabled {
+    &.md-checked {
+      .md-checkbox-container {
+        background-color: rgba(#000, .26) !important;
+        border-color: transparent !important;
+      }
+    }
+
+    &:not(.md-checked) {
+      .md-checkbox-container {
+        border-color: rgba(#000, .26);
+        background-color: $docutap-clickable-disabled;
+      }
+    }
+  }
 }
 
 .md-checkbox.md-checked {

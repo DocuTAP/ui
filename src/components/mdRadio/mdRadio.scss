@@ -17,6 +17,11 @@ $radio-touch-size: 48px;
     position: absolute;
     top: 0;
   }
+
+  .md-button {
+    display: block;
+    margin: auto;
+  }
 }
 
 .md-radio {
@@ -94,6 +99,28 @@ $radio-touch-size: 48px;
     height: $radio-size;
     padding-left: 8px;
     line-height: $radio-size;
+  }
+
+  &.md-disabled {
+    .md-radio-container {
+      border-color: rgba(#000, .26) !important;
+
+      &:after {
+        background-color: rgba(#000, .26) !important;
+      }
+    }
+
+    &.md-checked {
+      .md-radio-container {
+        border-color: rgba(#000, .26);
+      }
+    }
+
+    &:not(.md-checked) {
+      .md-radio-container {
+        background-color: $docutap-clickable-disabled;
+      }
+    }
   }
 }
 

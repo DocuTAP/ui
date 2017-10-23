@@ -97,9 +97,11 @@
 
             <div>
               <md-radio v-model="radio4" id="my-test10" name="my-test-group3" md-value="1">My beautiful radio</md-radio>
-              <md-radio v-model="radio4" id="my-test11" name="my-test-group3" md-value="2" disabled>Disabled</md-radio>
+              <md-radio v-model="radio4" id="my-test11" name="my-test-group3" md-value="2" :disabled="isDisabled">Disabled - {{isDisabled}}</md-radio>
               <md-radio v-model="radio4" id="my-test12" name="my-test-group3" md-value="3">Another radio</md-radio>
             </div>
+
+            <md-button @click="isDisabled = !isDisabled">Toggle Disabled</md-button>
           </div>
 
           <div slot="code">
@@ -238,7 +240,8 @@
         radio5: 2,
         radio6: 3,
         radio7: 1,
-        radio8: 2
+        radio8: 2,
+        isDisabled: false
       };
     }
   };

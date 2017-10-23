@@ -57,21 +57,5 @@
         }
       }
     }
-
-    &.md-disabled {
-      .md-radio-container {
-        border-color: rgba(#000, .26);
-
-        &:after {
-          background-color: rgba(#000, .26);
-        }
-      }
-
-      &.md-checked {
-        .md-radio-container {
-          border-color: rgba(#000, .26);
-        }
-      }
-    }
   }
 }
