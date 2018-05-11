@@ -347,6 +347,11 @@
                 <label>Clearable</label>
                 <md-input v-model="initialValue"></md-input>
               </md-input-container>
+
+              <md-input-container class="no-outline">
+                <label>No outline</label>
+                <md-input></md-input>
+              </md-input-container>
             </form>
           </div>
 

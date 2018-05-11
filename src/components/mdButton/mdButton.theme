@@ -18,9 +18,10 @@
     &.md-fab {
       color: #{'ACCENT-CONTRAST'};
       background-color: #{'ACCENT-COLOR'};
+      background: linear-gradient(90deg, #{'ACCENT-COLOR-200'}, #{'ACCENT-COLOR-800'});
 
       &:hover {
-        background-color: #{'ACCENT-COLOR-600'};
+        opacity: 0.8;
       }
 
       &.md-clean {
@@ -52,7 +53,8 @@
         color: #{'PRIMARY-CONTRAST'};
 
         &:hover {
-          background-color: #{'PRIMARY-COLOR-600'};
+          background-color: #{'PRIMARY-COLOR'};
+          opacity: 0.8;
         }
       }
 
@@ -69,17 +71,19 @@
       &.md-outlined {
         &:hover {
           background-color: #{'ACCENT-COLOR-600'};
-          border-color: #{'ACCENT-COLOR-600'};
+          background: linear-gradient(90deg, #{'ACCENT-COLOR-200'}, #{'ACCENT-COLOR-800'});
+          border-color: transparent;
           color: #fff;
         }
       }
 
       &.md-raised {
         background-color: #{'ACCENT-COLOR'};
+        background: linear-gradient(90deg, #{'ACCENT-COLOR-200'}, #{'ACCENT-COLOR-800'});
         color: #{'ACCENT-CONTRAST'};
 
         &:hover {
-          background-color: #{'ACCENT-COLOR-600'};
+          opacity: 0.8;
         }
       }
 
@@ -107,7 +111,8 @@
         color: #{'WARN-CONTRAST'};
 
         &:hover {
-          background-color: #{'WARN-COLOR-600'};
+          background-color: #{'WARN-COLOR'};
+          opacity: 0.8;
         }
       }
 
