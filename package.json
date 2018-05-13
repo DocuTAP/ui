@@ -29,6 +29,7 @@
     "README.md"
   ],
   "scripts": {
+    "start": "npm run dev",
     "dev": "babel-node build/server/index.js --presets es2015,stage-0",
     "build:docs": "babel-node build/server/build-docs.js --presets es2015,stage-0",
     "build:lib": "babel-node build/server/build-lib.js --presets es2015,stage-0",

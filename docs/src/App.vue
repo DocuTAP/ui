@@ -281,7 +281,7 @@
       }
 
       img {
-        width: 160px;
+        width: 115px;
         margin-bottom: 16px;
       }
     }
