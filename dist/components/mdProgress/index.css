@@ -1,0 +1,111 @@
+/* Common */
+/* Responsive Breakpoints */
+/* Transitions - Based on Angular Material */
+/* Elevation - Based on Angular Material */
+.md-progress {
+  height: 4px;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  width: 100%;
+}
+.md-progress.md-indeterminate .md-progress-track {
+    right: 0;
+}
+.md-progress.md-indeterminate .md-progress-track:before, .md-progress.md-indeterminate .md-progress-track:after {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      will-change: left, right;
+      content: '';
+}
+.md-progress.md-indeterminate .md-progress-track:before {
+      -webkit-animation: progress-indeterminate 2.3s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
+              animation: progress-indeterminate 2.3s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
+}
+.md-progress.md-indeterminate .md-progress-track:after {
+      -webkit-animation: progress-indeterminate-short 2.3s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+              animation: progress-indeterminate-short 2.3s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+      -webkit-animation-delay: 1.15s;
+              animation-delay: 1.15s;
+}
+.md-progress.md-progress-enter, .md-progress.md-progress-leave-active {
+    opacity: 0;
+    -webkit-transform: scaleY(0) translateZ(0);
+            transform: scaleY(0) translateZ(0);
+}
+.md-progress.md-progress-enter-active {
+    -webkit-transform: scaleY(1) translateZ(0);
+            transform: scaleY(1) translateZ(0);
+}
+.md-progress-track {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+@-webkit-keyframes progress-indeterminate {
+0% {
+    right: 100%;
+    left: -35%;
+}
+60% {
+    right: -100%;
+    left: 100%;
+}
+100% {
+    right: -100%;
+    left: 100%;
+}
+}
+@keyframes progress-indeterminate {
+0% {
+    right: 100%;
+    left: -35%;
+}
+60% {
+    right: -100%;
+    left: 100%;
+}
+100% {
+    right: -100%;
+    left: 100%;
+}
+}
+@-webkit-keyframes progress-indeterminate-short {
+0% {
+    right: 100%;
+    left: -200%;
+}
+60% {
+    right: -8%;
+    left: 107%;
+}
+100% {
+    right: -8%;
+    left: 107%;
+}
+}
+@keyframes progress-indeterminate-short {
+0% {
+    right: 100%;
+    left: -200%;
+}
+60% {
+    right: -8%;
+    left: 107%;
+}
+100% {
+    right: -8%;
+    left: 107%;
+}
+}
+
+/*# sourceMappingURL=index.css.map*/

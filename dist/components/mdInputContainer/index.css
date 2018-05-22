@@ -1,0 +1,235 @@
+/* Common */
+/* Responsive Breakpoints */
+/* Transitions - Based on Angular Material */
+/* Elevation - Based on Angular Material */
+.md-input-container {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 4px 0 24px;
+  min-height: 48px;
+  padding-top: 20px;
+  position: relative;
+  width: 100%;
+}
+.md-input-container label {
+    color: rgba(0, 0, 0, 0.54);
+    font-size: 12px;
+    left: 11px;
+    line-height: 20px;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    -webkit-transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    -webkit-transition-duration: .3s;
+            transition-duration: .3s;
+}
+.md-input-container input,
+  .md-input-container textarea {
+    background: none;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    color: rgba(0, 0, 0, 0.54);
+    display: block;
+    -ms-flex: 1;
+            -webkit-box-flex: 1;
+        flex: 1;
+    font-family: inherit;
+    font-size: 1px;
+    height: 40px;
+    line-height: 40px;
+    padding: 10px 20px;
+    -webkit-transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    -webkit-transition-property: font-size;
+    transition-property: font-size;
+    width: 100%;
+}
+.md-input-container input:focus,
+    .md-input-container textarea:focus {
+      outline: none;
+}
+.md-input-container input::-webkit-input-placeholder,
+    .md-input-container textarea::-webkit-input-placeholder {
+      -webkit-text-fill-color: initial;
+      color: rgba(0, 0, 0, 0.54);
+      font-size: 16px;
+      text-shadow: none;
+}
+.md-input-container input[type="password"],
+    .md-input-container textarea[type="password"] {
+      letter-spacing: 3px;
+}
+.md-input-container input ~ .md-icon:not(.md-icon-delete),
+    .md-input-container textarea ~ .md-icon:not(.md-icon-delete) {
+      margin-left: 12px;
+}
+.md-input-container input ~ .md-icon:not(.md-icon-delete):after,
+      .md-input-container textarea ~ .md-icon:not(.md-icon-delete):after {
+        left: auto;
+        right: 0;
+}
+.md-input-container textarea {
+    line-height: 1.3em;
+    max-height: 230px;
+    min-height: 42px;
+    resize: none;
+}
+.md-input-container .md-button {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+}
+.md-input-container .md-error,
+  .md-input-container .md-count {
+    bottom: -22px;
+    font-size: 12px;
+    height: 20px;
+    position: absolute;
+}
+.md-input-container .md-error {
+    display: block !important;
+    left: 0;
+    opacity: 0;
+    -webkit-transform: translate3d(0, -8px, 0);
+            transform: translate3d(0, -8px, 0);
+    -webkit-transition: all 0.3s cubic-bezier(0.55, 0, 0.55, 0.2);
+    transition: all 0.3s cubic-bezier(0.55, 0, 0.55, 0.2);
+}
+.md-input-container .md-count {
+    right: 0;
+}
+.md-input-container .md-icon:not(.md-icon-delete) {
+    color: rgba(0, 0, 0, 0.54);
+    margin: 4px auto;
+    -webkit-transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.md-input-container .md-icon:not(.md-icon-delete).light-gray {
+      color: rgba(0, 0, 0, 0.2);
+}
+.md-input-container .md-icon:not(.md-icon-delete):after {
+      bottom: 0;
+      content: '';
+      height: 2px;
+      left: 0;
+      position: absolute;
+      width: 36px;
+      z-index: 2;
+}
+.md-input-container .md-icon:not(.md-icon-delete) ~ label {
+      left: 36px;
+}
+.md-input-container .md-icon:not(.md-icon-delete) ~ .md-input,
+    .md-input-container .md-icon:not(.md-icon-delete) ~ .md-textarea,
+    .md-input-container .md-icon:not(.md-icon-delete) ~ .md-file {
+      margin-left: 12px;
+}
+.md-input-container.no-outline input,
+  .md-input-container.no-outline textarea {
+    border-left: 0;
+    border-radius: 0;
+    border-right: 0;
+    border-top: 0;
+    box-shadow: none !important;
+    padding: 0;
+}
+.md-input-container.no-outline label {
+    left: 0;
+}
+.md-input-container.rectangular input,
+  .md-input-container.rectangular textarea {
+    border-radius: .2rem;
+}
+.md-input-container .md-autocomplete,
+.md-input-container .md-autocomplete .md-menu,
+.md-input-container .md-autocomplete .md-menu .md-input {
+  width: 100%;
+}
+.md-theme-default.md-input-container .md-autocomplete .md-icon:not(.md-icon-search):after {
+  height: 0;
+}
+.md-input-container.md-input-placeholder input,
+.md-input-container.md-input-placeholder textarea {
+  font-size: 16px;
+}
+.md-input-container.md-input-focused input,
+.md-input-container.md-input-focused textarea, .md-input-container.md-has-value input,
+.md-input-container.md-has-value textarea {
+  font-size: 16px;
+}
+.md-input-container.md-input-inline label {
+  font-size: 16px;
+  left: 21px;
+  pointer-events: none;
+  top: 30px;
+}
+.md-input-container.md-input-inline.md-input-focused label {
+  font-size: 16px;
+}
+.md-input-container.md-input-inline.md-has-value label {
+  opacity: 0;
+}
+.md-input-container.md-input-disabled:after {
+  background: bottom left repeat-x;
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.38) 0%, rgba(0, 0, 0, 0.38) 33%, transparent 0%);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.38) 0%, rgba(0, 0, 0, 0.38) 33%, transparent 0%);
+  background-size: 4px 1px;
+}
+.md-input-container.md-input-disabled label,
+.md-input-container.md-input-disabled input,
+.md-input-container.md-input-disabled textarea {
+  color: rgba(0, 0, 0, 0.38);
+}
+.md-input-container.md-input-disabled input {
+  background-color: #f5f5f5;
+}
+.md-input-container.md-has-password.md-input-focused .md-toggle-password {
+  color: rgba(0, 0, 0, 0.54);
+}
+.md-input-container.md-has-password .md-toggle-password {
+  bottom: -2px;
+  color: rgba(0, 0, 0, 0.38);
+  margin: 0;
+  position: absolute;
+  right: 0;
+}
+.md-input-container.md-has-password .md-toggle-password .md-ink-ripple {
+    color: rgba(0, 0, 0, 0.87);
+}
+.md-input-container.md-clearable.md-input-focused .md-clear-input {
+  color: rgba(0, 0, 0, 0.54);
+}
+.md-input-container.md-clearable .md-clear-input {
+  bottom: -2px;
+  color: rgba(0, 0, 0, 0.38);
+  margin: 0;
+  position: absolute;
+  right: 0;
+}
+.md-input-container.md-clearable .md-clear-input .md-ink-ripple {
+    color: rgba(0, 0, 0, 0.87);
+}
+.md-input-container.md-input-invalid .md-error {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+.md-input-container.md-input-required label:after {
+  content: '*';
+  font-size: 12px;
+  line-height: 1em;
+  position: absolute;
+  right: 0;
+  top: 2px;
+  -webkit-transform: translateX(calc(100% + 2px));
+          transform: translateX(calc(100% + 2px));
+  vertical-align: top;
+}
+.md-input-container.md-has-select:hover .md-select:not(.md-disabled):after {
+  color: rgba(0, 0, 0, 0.87);
+}
+
+/*# sourceMappingURL=index.css.map*/

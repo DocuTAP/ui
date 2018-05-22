@@ -1,0 +1,155 @@
+/* Common */
+/* Responsive Breakpoints */
+/* Transitions - Based on Angular Material */
+/* Elevation - Based on Angular Material */
+.md-toolbar .content {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-align: center;
+          -webkit-box-align: center;
+      align-items: center;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-flow: row wrap;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+      flex-flow: row wrap;
+  min-height: 64px;
+  padding: 0 8px;
+  position: relative;
+  -webkit-transform: translate3D(0, 0, 0);
+          transform: translate3D(0, 0, 0);
+  -webkit-transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.md-toolbar .content .md-toolbar-container > a {
+    color: currentColor;
+}
+.md-toolbar .content .md-toolbar-container > a:hover {
+      color: currentColor;
+}
+.md-toolbar.md-fixed {
+  position: relative;
+}
+.md-toolbar.md-fixed .content {
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 3;
+}
+.md-toolbar.md-fixed .placeholder {
+    min-height: 64px;
+}
+.md-toolbar.md-dense .content {
+  min-height: 48px;
+}
+.md-toolbar.md-dense.md-medium .content {
+  min-height: 72px;
+}
+.md-toolbar.md-dense.md-large .content {
+  min-height: 96px;
+}
+.md-toolbar.md-dense .md-toolbar-container {
+  height: 48px;
+}
+.md-toolbar.md-medium .content {
+  min-height: 88px;
+}
+.md-toolbar.md-medium.md-fixed .placeholder {
+  min-height: 88px;
+}
+.md-toolbar.md-medium .md-toolbar-container:nth-child(2) .md-title:first-child {
+  margin-left: 56px;
+}
+.md-toolbar.md-large .content {
+  -ms-flex-line-pack: inherit;
+      align-content: inherit;
+  min-height: 128px;
+}
+.md-toolbar.md-large.md-fixed .placeholder {
+  min-height: 128px;
+}
+.md-toolbar.md-large .md-toolbar-container:nth-child(2) .md-title:first-child {
+  margin-left: 56px;
+}
+.md-toolbar.md-account-header .content {
+  min-height: 164px;
+}
+.md-toolbar.md-account-header .md-ink-ripple {
+  color: #fff;
+}
+.md-toolbar.md-account-header .md-list-item-container:hover:not([disabled]) {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+.md-toolbar.md-account-header .md-avatar-list {
+  margin: 16px 0 8px;
+}
+.md-toolbar.md-account-header .md-avatar-list .md-list-item-container {
+    -ms-flex-align: start;
+            -webkit-box-align: start;
+        align-items: flex-start;
+}
+.md-toolbar.md-account-header .md-avatar-list .md-avatar + .md-avatar {
+    margin-left: 16px;
+}
+.md-toolbar .md-toolbar-container {
+  -ms-flex-align: center;
+          -webkit-box-align: center;
+      align-items: center;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  height: 64px;
+  width: 100%;
+}
+.md-toolbar .md-toolbar-container > .md-button:first-child {
+    margin-left: 0;
+    margin-right: 16px;
+}
+.md-toolbar .md-toolbar-container > .md-button + .md-button {
+    margin-left: 0;
+}
+.md-toolbar > .md-button:first-child {
+  margin-left: 0;
+  margin-right: 16px;
+}
+.md-toolbar > .md-button + .md-button {
+  margin-left: 0;
+}
+.md-toolbar .md-button:hover:not([disabled]):not(.md-raised):not(.md-icon-button):not(.md-fab) {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.md-toolbar .md-title {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0;
+}
+.md-toolbar .md-title:first-child {
+    margin-left: 8px;
+}
+.md-toolbar .md-title + .md-input-container {
+    margin-left: 24px;
+}
+.md-toolbar .md-input-container {
+  margin-bottom: 0;
+  margin-top: 0;
+  min-height: 32px;
+  padding-top: 0;
+}
+.md-toolbar .md-list {
+  -ms-flex: 1;
+          -webkit-box-flex: 1;
+      flex: 1;
+  margin: 0 -8px;
+  padding: 0;
+}
+.md-toolbar .md-progress {
+  bottom: -4px;
+  top: initial;
+}
+
+/*# sourceMappingURL=index.css.map*/

@@ -1,0 +1,130 @@
+/* Common */
+/* Responsive Breakpoints */
+/* Transitions - Based on Angular Material */
+/* Elevation - Based on Angular Material */
+.md-select {
+  height: 40px;
+  min-width: 128px;
+  position: relative;
+  width: 100%;
+}
+.md-select:focus {
+    outline: none;
+}
+.md-select:not(.md-select-icon) {
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    padding: 0 20px;
+}
+.md-select:not(.md-select-icon):after {
+      content: '\25BC';
+      margin-top: 2px;
+      position: absolute;
+      right: 17px;
+      top: 50%;
+      -webkit-transform: translateY(-50%) scaleY(0.45) scaleX(0.85);
+              transform: translateY(-50%) scaleY(0.45) scaleX(0.85);
+      -webkit-transition: all 0.15s linear;
+      transition: all 0.15s linear;
+}
+.md-select.md-active .md-select-menu {
+    opacity: 1;
+    pointer-events: auto;
+    top: -8px;
+    -webkit-transform: translateY(-8px) scale3D(1, 1, 1);
+            transform: translateY(-8px) scale3D(1, 1, 1);
+    -webkit-transform-origin: center top;
+            transform-origin: center top;
+    -webkit-transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    -webkit-transition-duration: .25s;
+            transition-duration: .25s;
+    -webkit-transition-property: opacity, top, -webkit-transform;
+    transition-property: opacity, top, -webkit-transform;
+    transition-property: opacity, transform, top;
+    transition-property: opacity, transform, top, -webkit-transform;
+}
+.md-select.md-active .md-select-menu > * {
+      opacity: 1;
+      -webkit-transition: all 0.3s cubic-bezier(0.55, 0, 0.55, 0.2);
+      transition: all 0.3s cubic-bezier(0.55, 0, 0.55, 0.2);
+      -webkit-transition-delay: .1s;
+              transition-delay: .1s;
+      -webkit-transition-duration: .15s;
+              transition-duration: .15s;
+}
+.md-select.md-disabled {
+    background-color: #f5f5f5;
+    pointer-events: none;
+    user-drag: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+.md-select select {
+    left: -999em;
+    position: absolute;
+}
+.md-select .md-menu {
+    display: block;
+    height: 40px;
+    position: relative;
+    width: 100%;
+}
+.md-select .md-select-value {
+    cursor: pointer;
+    display: block;
+    font-size: 16px;
+    height: 40px;
+    line-height: 41px;
+    overflow: hidden;
+    padding-right: 24px;
+    position: relative;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    z-index: 2;
+}
+.md-select .md-subheader {
+    color: rgba(117, 117, 117, 0.87);
+    text-transform: uppercase;
+}
+.md-select .md-subheader:first-child {
+      margin-top: -8px;
+}
+.md-select-content {
+  max-height: 256px;
+  width: auto;
+}
+.md-select-content.md-menu-content {
+    border-radius: 5px;
+}
+.md-select-content.md-direction-bottom-right {
+    margin-left: -16px;
+    margin-top: -15px;
+}
+.md-select-content .md-option[disabled] {
+    background-color: #f5f5f5;
+    pointer-events: none;
+    user-drag: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+.md-select-content .md-menu-item .md-list-item-holder {
+    -ms-flex-pack: start;
+            -webkit-box-pack: start;
+        justify-content: flex-start;
+    overflow: visible;
+}
+.md-select-content.md-multiple .md-checkbox {
+    margin: 0;
+}
+.md-select-content.md-multiple .md-checkbox-label {
+    cursor: pointer;
+    padding-left: 16px;
+}
+
+/*# sourceMappingURL=index.css.map*/
