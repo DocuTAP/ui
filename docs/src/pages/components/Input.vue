@@ -302,55 +302,57 @@
       <div slot="example">
         <example-box card-title="Regular fields">
           <div slot="demo">
+            <div>
+              <md-radio v-model="inputStyle" id="my-test3" name="my-test-group1" md-value="no-outline">No Outline</md-radio>
+              <md-radio v-model="inputStyle" id="my-test1" name="my-test-group1" md-value="rounded">Rounded</md-radio>
+              <md-radio v-model="inputStyle" id="my-test2" name="my-test-group1" md-value="rectangular">Rectangular</md-radio>
+            </div>
+
+
             <form novalidate @submit.stop.prevent="submit">
-              <md-input-container>
+              <md-input-container :class="inputStyle">
                 <label>Initial value</label>
                 <md-input v-model="initialValue"></md-input>
               </md-input-container>
               
-              <md-input-container>
+              <md-input-container :class="inputStyle">
                 <label>Initial value (read only)</label>
                 <md-input v-model="initialValue" readonly></md-input>
               </md-input-container>
 
-              <md-input-container>
+              <md-input-container :class="inputStyle">
                 <label>Autocomplete (with fetch)</label>
                 <md-autocomplete v-model="autocompleteValue" :fetch="fetchAutocomplete"></md-autocomplete>
               </md-input-container>
 
-              <md-input-container>
+              <md-input-container :class="inputStyle">
                 <label>With label</label>
                 <md-input placeholder="My nice placeholder"></md-input>
               </md-input-container>
 
-              <md-input-container md-inline>
+              <md-input-container md-inline :class="inputStyle">
                 <label>Inline field</label>
                 <md-input></md-input>
               </md-input-container>
 
-              <md-input-container>
+              <md-input-container :class="inputStyle">
                 <label>Number</label>
                 <md-input type="number"></md-input>
               </md-input-container>
 
-              <md-input-container>
+              <md-input-container :class="inputStyle">
                 <label>Textarea</label>
                 <md-textarea></md-textarea>
               </md-input-container>
 
-              <md-input-container>
+              <md-input-container :class="inputStyle">
                 <label>Disabled</label>
                 <md-input disabled></md-input>
               </md-input-container>
 
-              <md-input-container md-clearable>
+              <md-input-container md-clearable :class="inputStyle">
                 <label>Clearable</label>
                 <md-input v-model="initialValue"></md-input>
-              </md-input-container>
-
-              <md-input-container class="no-outline">
-                <label>No outline</label>
-                <md-input></md-input>
               </md-input-container>
             </form>
           </div>
@@ -723,6 +725,7 @@
     data() {
       return {
         autocompleteValue: '',
+        inputStyle: 'no-outline',
         initialValue: 'My initial value',
         listAutocomplete: [
           {name: 'oi'},

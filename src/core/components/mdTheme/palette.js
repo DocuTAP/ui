@@ -19,7 +19,7 @@ export default {
   docutapAccent: {
     50: '#fce4ec',
     100: '#f8bbd0',
-    200: '#35BFBC',
+    200: '#dcfbfa',
     300: '#35ca84',
     400: '#ec407a',
     500: '#35BFBC',

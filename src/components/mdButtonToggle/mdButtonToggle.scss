@@ -39,4 +39,18 @@ $button-radius: 2px;
       border-radius: $button-radius;
     }
   }
+
+  &.button-bar {
+    border: solid 1px;
+    border-radius: 0.214rem;
+    width: fit-content;
+
+    > .md-button {
+      border-right: solid 1px;
+
+      &:last-of-type {
+        border-right: 0;
+      }
+    }
+  }
 }

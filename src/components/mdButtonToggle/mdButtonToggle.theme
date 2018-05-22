@@ -71,5 +71,25 @@
         background-color: rgba(#000, .26);
       }
     }
+
+    &.button-bar {
+      border-color: #{'ACCENT-COLOR'};
+
+      > .md-button {
+        border-color: #{'ACCENT-COLOR'};
+
+        &:hover:not([disabled]) {
+          &:not(.md-raised) {
+            &:not(.md-toggle) {
+              background-color: #{'ACCENT-COLOR-200'};
+            }
+          }
+        }
+
+        &:active:not([disabled]):not([faux-link]):not(.md-toggle) {
+          background-color: #{'ACCENT-COLOR-200'};
+        }
+      }
+    }
   }
 }

@@ -352,6 +352,13 @@
               <md-button>Text</md-button>
               <md-button>Too</md-button>
             </md-button-toggle>
+
+            <md-button-toggle md-single class="md-accent button-bar">
+              <md-button class="md-dense">Apples</md-button>
+              <md-button class="md-dense md-toggle">Bannanas</md-button>
+              <md-button class="md-dense">Grapes</md-button>
+              <md-button class="md-dense">Stawberries</md-button>
+            </md-button-toggle>
           </div>
 
           <div slot="code">
