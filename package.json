@@ -97,7 +97,7 @@
     "webpack-merge": "^3.0.0"
   },
   "release": {
-    "branch": "develop",
+    "branch": "ac_deploy-test-1",
     "verifyConditions": [
       "@semantic-release/git",
       "@semantic-release/github",
