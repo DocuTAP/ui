@@ -17,6 +17,7 @@
   export default {
     name: 'md-dialog',
     props: {
+      mdActive: Boolean,
       mdClickOutsideToClose: {
         type: Boolean,
         default: true
@@ -42,6 +43,20 @@
       transitionOff: false,
       dialogTransform: ''
     }),
+    watch: {
+      mdActive(isActive) {
+        if (isActive === this.active) {
+          return;
+        }
+        this.$nextTick().then(() => {
+          if (isActive) {
+            this.open();
+          } else {
+            this.close();
+          }
+        });
+      }
+    },
     computed: {
       classes() {
         return {
@@ -100,6 +115,7 @@
           this.dialogElement.focus();
           this.transitionOff = false;
           this.active = true;
+          this.$emit('update:mdActive', true);
         });
 
         this.$emit('open');
@@ -131,6 +147,7 @@
             window.setTimeout(() => {
               this.transitionOff = false;
               this.active = false;
+              this.$emit('update:mdActive', false);
               this.dialogInnerElement.addEventListener(transitionEndEventName, cleanElement);
             });
 

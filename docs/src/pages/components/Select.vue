@@ -159,6 +159,19 @@
               </md-input-container>
 
               <md-input-container>
+                <label for="movie">Rectangular class</label>
+                <md-select name="movie" id="movie" v-model="movie" class="rectangular">
+                  <md-option value="fight_club">Fight Club</md-option>
+                  <md-option value="godfather">Godfather</md-option>
+                  <md-option value="godfather_ii">Godfather II</md-option>
+                  <md-option value="godfather_iii">Godfather III</md-option>
+                  <md-option value="godfellas">Godfellas</md-option>
+                  <md-option value="pulp_fiction">Pulp Fiction</md-option>
+                  <md-option value="scarface">Scarface</md-option>
+                </md-select>
+              </md-input-container>
+
+              <md-input-container>
                 <label for="country">Country</label>
                 <md-select name="country" id="country" v-model="country">
                   <md-option value="australia">Australia</md-option>
@@ -490,55 +503,55 @@
 </template>
 
 <style lang="scss" scoped>
-  .field-group {
-    display: flex;
-    flex-basis: 100%;
-    flex-wrap: wrap;
-  }
+.field-group {
+  display: flex;
+  flex-basis: 100%;
+  flex-wrap: wrap;
+}
 
-  .md-input-container {
-    max-width: 300px;
+.md-input-container {
+  max-width: 300px;
 
-    + .md-input-container {
-      margin-left: 4px;
-    }
+  + .md-input-container {
+    margin-left: 4px;
   }
+}
 
-  .multiple {
-    height: 150px;
-  }
-  
-  .select-icon {
-    margin-bottom: 20px;
-  }
+.multiple {
+  height: 150px;
+}
+
+.select-icon {
+  margin-bottom: 20px;
+}
 </style>
 
 <script>
-  export default {
-    data: () => ({
-      movie: 'godfather',
-      country: '',
-      font: '',
-      food: '',
-      users: [],
-      options: [
-        { id: 1, name: 'a' },
-        { id: 2, name: 'b' },
-        { id: 3, name: 'c' },
-        { id: 4, name: 'd' },
-        { id: 5, name: 'e' }
-      ],
-      items: [],
-      usersIcon: [],
-      iconMenuOptions: {
-        mdAlignTrigger: true
-      },
-      isDisabled: true
-    }),
-    methods: {
-      setPulpFiction() {
-        this.movie = 'pulp_fiction';
-      }
+export default {
+  data: () => ({
+    movie: 'godfather',
+    country: '',
+    font: '',
+    food: '',
+    users: [],
+    options: [
+      { id: 1, name: 'a' },
+      { id: 2, name: 'b' },
+      { id: 3, name: 'c' },
+      { id: 4, name: 'd' },
+      { id: 5, name: 'e' }
+    ],
+    items: [],
+    usersIcon: [],
+    iconMenuOptions: {
+      mdAlignTrigger: true
+    },
+    isDisabled: true
+  }),
+  methods: {
+    setPulpFiction() {
+      this.movie = 'pulp_fiction';
     }
-  };
+  }
+};
 </script>

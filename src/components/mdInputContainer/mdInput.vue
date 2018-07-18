@@ -9,6 +9,7 @@
     :placeholder="placeholder"
     :maxlength="maxlength"
     :readonly="readonly"
+    :spellcheck="spellcheck"
     @focus="onFocus"
     @blur="onInputBlur"
     @input="onInputChange"
@@ -30,6 +31,9 @@
       type: {
         type: String,
         default: 'text'
+      },
+      spellcheck: {
+        type: Boolean
       },
       phonePattern: {
         type: String,

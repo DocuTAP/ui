@@ -94,6 +94,10 @@ $select-height: 40px;
       margin-top: -8px;
     }
   }
+
+  &.rectangular {
+    border-radius: .2rem;
+  }
 }
 
 .md-select-content {

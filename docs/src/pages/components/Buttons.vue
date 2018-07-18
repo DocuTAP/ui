@@ -374,6 +374,10 @@
               <md-button class="md-fab" disabled>
                 <md-icon>message</md-icon>
               </md-button>
+
+              <md-button class="md-fab with-text">
+                <md-icon>add</md-icon> New
+              </md-button>
             </div>
 
             <div>

@@ -182,6 +182,26 @@ $button-icon-size: 40px;
     .md-ink-ripple {
       border-radius: $button-fab-size;
     }
+
+    $fab-height: 42px;
+    $fab-icon-size: 24px;
+    &.with-text {
+      padding-left: 45px;
+      padding-right: 30px;
+      width: initial;
+      height: $fab-height;
+      line-height: $fab-height + 3px;
+      box-shadow: none;
+
+      .md-icon {
+        right: initial;
+        left: 9px;
+        width: 36px;
+        height: $fab-icon-size;
+        line-height: $fab-icon-size;
+        font-size: $fab-icon-size;
+      }
+    }
   }
 
   &[disabled] {
